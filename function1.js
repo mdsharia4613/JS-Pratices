@@ -74,3 +74,20 @@ const ageCount = 50;
 const ageCountNumber = largestNUmber(ageCount);
 console.log(ageCountNumber);
 
+//  ---------------- 0 ---------------------
+
+function division(div) {
+    let sum = 0;
+    for (const num of div) {
+        
+        if (num % 4 === 0) {
+            sum = sum + num
+        }
+    }
+    return sum;
+}
+
+const result = [2, 4, 5, 8, 32, 45];
+const numbers = division(result);
+console.log('division', numbers);
+
