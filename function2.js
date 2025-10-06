@@ -20,3 +20,21 @@ function isleapYear(year){
 const isLeap = isleapYear(2032);
 console.log(isLeap);
 
+function incomeAmount(income){
+    if(income <= 50000){
+        return 10;
+    }
+    else if(income <= 100000){
+        return 20;
+    }
+    else if(income < 200000){
+        return 30;
+    }
+    else{
+        return {tax: 40};
+    }
+}
+
+const amount = incomeAmount(490000)
+console.log('amount', amount);
+
